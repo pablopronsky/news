@@ -1,0 +1,1 @@
+App creada por Pablo Pronsky (developer) - Mauro Flor (UX-UI)

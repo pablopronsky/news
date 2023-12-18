@@ -1,8 +1,6 @@
 import 'package:floor/floor.dart';
-import 'package:que_me_pongo/features/daily_news/domain/entities/article.dart';
-
 import '../../../../core/constants/constants.dart';
-
+import '../../domain/entities/article.dart';
 
 @Entity(tableName: 'article',primaryKeys: ['id'])
 class ArticleModel extends ArticleEntity {
@@ -40,14 +38,14 @@ class ArticleModel extends ArticleEntity {
 
   factory ArticleModel.fromEntity(ArticleEntity entity) {
     return ArticleModel(
-        id: entity.id,
-        author: entity.author,
-        title: entity.title,
-        description: entity.description,
-        url: entity.url,
-        urlToImage: entity.urlToImage,
-        publishedAt: entity.publishedAt,
-        content: entity.content
+      id: entity.id,
+      author: entity.author,
+      title: entity.title,
+      description: entity.description,
+      url: entity.url,
+      urlToImage: entity.urlToImage,
+      publishedAt: entity.publishedAt,
+      content: entity.content
     );
   }
 }

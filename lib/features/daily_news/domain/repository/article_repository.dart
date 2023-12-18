@@ -1,7 +1,16 @@
-import 'package:que_me_pongo/features/daily_news/domain/entities/article.dart';
+
 
 import '../../../../core/resources/data_state.dart';
+import '../entities/article.dart';
 
-abstract class ArticleRepository{
+abstract class ArticleRepository {
+  // API methods
   Future<DataState<List<ArticleEntity>>> getNewsArticles();
+
+  // Database methods
+  Future < List < ArticleEntity >> getSavedArticles();
+
+  Future < void > saveArticle(ArticleEntity article);
+
+  Future < void > removeArticle(ArticleEntity article);
 }

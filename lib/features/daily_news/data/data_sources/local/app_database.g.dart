@@ -102,30 +102,30 @@ class _$ArticleDao extends ArticleDao {
         _articleModelInsertionAdapter = InsertionAdapter(
             database,
             'article',
-                (ArticleModel item) => <String, Object?>{
-              'id': item.id,
-              'author': item.author,
-              'title': item.title,
-              'description': item.description,
-              'url': item.url,
-              'urlToImage': item.urlToImage,
-              'publishedAt': item.publishedAt,
-              'content': item.content
-            }),
+            (ArticleModel item) => <String, Object?>{
+                  'id': item.id,
+                  'author': item.author,
+                  'title': item.title,
+                  'description': item.description,
+                  'url': item.url,
+                  'urlToImage': item.urlToImage,
+                  'publishedAt': item.publishedAt,
+                  'content': item.content
+                }),
         _articleModelDeletionAdapter = DeletionAdapter(
             database,
             'article',
             ['id'],
-                (ArticleModel item) => <String, Object?>{
-              'id': item.id,
-              'author': item.author,
-              'title': item.title,
-              'description': item.description,
-              'url': item.url,
-              'urlToImage': item.urlToImage,
-              'publishedAt': item.publishedAt,
-              'content': item.content
-            });
+            (ArticleModel item) => <String, Object?>{
+                  'id': item.id,
+                  'author': item.author,
+                  'title': item.title,
+                  'description': item.description,
+                  'url': item.url,
+                  'urlToImage': item.urlToImage,
+                  'publishedAt': item.publishedAt,
+                  'content': item.content
+                });
 
   final sqflite.DatabaseExecutor database;
 

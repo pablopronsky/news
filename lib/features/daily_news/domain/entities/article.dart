@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-class ArticleEntity extends Equatable {
+class ArticleEntity extends Equatable{
   final int ? id;
   final String ? author;
   final String ? title;
@@ -18,7 +18,7 @@ class ArticleEntity extends Equatable {
     this.url,
     this.urlToImage,
     this.publishedAt,
-    this.content
+    this.content,
   });
 
   @override
@@ -35,6 +35,3 @@ class ArticleEntity extends Equatable {
     ];
   }
 }
-
-
-
